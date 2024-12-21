@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body{
+    margin: 0;
+    font-family: "Inter", serif;
+    background-color: #282D35;
+    color: white;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  header{
+    background-color: #21222A;
+    color: white;
+    padding: 30px 25px;
+    height: 90px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  nav > img{
+    width: 50px;
+    margin-right: 7px;
   }
-}
+  nav > span{
+    color: #9669ff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
 
-.card {
-  padding: 2em;
-}
+  main {
+    padding: 40px 30px;
+    background-image:url(/react-logo-half.png);
+    background-repeat: no-repeat;
+    /* background-position-x:right ;
+    background-position-y:65% ; */
+    background-position: right 70%;
 
-.read-the-docs {
-  color: #888;
-}
+  }
+
+  main > h1{
+    margin: 0;
+    font-size: 2.1rem;
+  }
+
+  .list-info{
+    margin-top: 40px;
+    max-width: 400px;
+  }
+
+  .list-info > li{
+    padding-block: 10px;
+  }
+
+  .list-info > li::marker{
+    color: #61DAFB;
+    font-size: 1.5rem;
+  }
